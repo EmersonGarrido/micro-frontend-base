@@ -10,11 +10,6 @@ module.exports = {
   async rewrites() {
     return {
       fallback: [
-        // Widget
-        {
-          source: '/:path*',
-          destination: `${BASE_URL.widget}/:path*`,
-        },
 
         //Blog
         {
@@ -44,6 +39,12 @@ module.exports = {
         {
           source: '/reactjs/:path*',
           destination: `${BASE_URL.reactjs}/reactjs/:path*`,
+        },
+
+        // Widget
+        {
+          source: '/:path*',
+          destination: `${BASE_URL.widget}/:path*`,
         },
       ]
     }
