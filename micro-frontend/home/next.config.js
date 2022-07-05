@@ -21,6 +21,14 @@ module.exports = {
         source: '/app/:path*',
         destination: `https://app-micro-frontend-base.vercel.app/app/:path*`,
       },
+      {
+        source: '/reactjs',
+        destination: `https://reactjs-micro-frontend-base.vercel.app/reactjs`,
+      },
+      {
+        source: '/reactjs/:path*',
+        destination: `https://reactjs-micro-frontend-base.vercel.app/reactjs/:path*`,
+      },
     ]
   },
 }
