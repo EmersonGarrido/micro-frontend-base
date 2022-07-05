@@ -2,12 +2,21 @@ const BASE_URL = {
   blog: process.env.NODE_ENV === 'production' ? 'https://blog-micro-frontend-base.vercel.app' : 'http://localhost:3001',
   app: process.env.NODE_ENV === 'production' ? 'https://app-micro-frontend-base.vercel.app' : 'http://localhost:3002',
   reactjs: process.env.NODE_ENV === 'production' ? 'https://reactjs-micro-frontend-base.vercel.app' : 'http://localhost:3003',
+  widget: process.env.NODE_ENV === 'production' ? 'https://widget-two-black.vercel.app' : 'http://localhost:3004',
 }
 
 module.exports = {
+  trailingSlash: true,
   async rewrites() {
     return {
       fallback: [
+        // Widget
+        {
+          source: '/:path*',
+          destination: `${BASE_URL.widget}/:path*`,
+        },
+
+        //Blog
         {
           source: '/blog',
           destination: `${BASE_URL.blog}/blog`,
@@ -16,6 +25,8 @@ module.exports = {
           source: '/blog/:path*',
           destination: `${BASE_URL.blog}/blog/:path*`,
         },
+
+        // App Nextjs
         {
           source: '/app',
           destination: `${BASE_URL.app}/app`,
@@ -24,9 +35,11 @@ module.exports = {
           source: '/app/:path*',
           destination: `${BASE_URL.app}/app/:path*`,
         },
+
+        // App ReactJS
         {
           source: '/reactjs',
-          destination: `${BASE_URL.reactjs}/:path*`,
+          destination: `${BASE_URL.reactjs}/reactjs`,
         },
         {
           source: '/reactjs/:path*',
