@@ -7,19 +7,19 @@ module.exports = {
       },
       {
         source: '/blog',
-        destination: `http://localhost:3001/blog`,
+        destination: `https://blog-micro-frontend-base.vercel.app/blog`,
       },
       {
         source: '/blog/:path*',
-        destination: `http://localhost:3001/blog/:path*`,
+        destination: `https://blog-micro-frontend-base.vercel.app/blog/:path*`,
       },
       {
         source: '/app',
-        destination: `http://localhost:3002/app`,
+        destination: `https://app-micro-frontend-base.vercel.app/app`,
       },
       {
         source: '/app/:path*',
-        destination: `http://localhost:3002/app/:path*`,
+        destination: `https://app-micro-frontend-base.vercel.app/app/:path*`,
       },
     ]
   },
