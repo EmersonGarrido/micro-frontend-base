@@ -25,7 +25,6 @@ const Home: NextPage = () => {
           alignItems: 'center',
           gap: "12px",
         }}>
-          <a href='/'> Home </a>
           <a href='/blog'> Blog </a>
           <a href='/app'> App </a>
           <a href='/widget/teste'> Widget </a>
