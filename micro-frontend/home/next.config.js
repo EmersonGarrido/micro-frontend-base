@@ -6,7 +6,6 @@ const BASE_URL = {
 }
 
 module.exports = {
-  trailingSlash: true,
   async rewrites() {
     return {
       fallback: [
