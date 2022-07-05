@@ -17,6 +17,19 @@ const Home: NextPage = () => {
           Welcome to BLOG Nextjs
         </h1>
 
+        <div style={{
+          margin: 10,
+          padding: 10,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: "12px",
+        }}>
+          <a href='/blog'> Blog </a>
+          <a href='/app'> App </a>
+          <a href='/reactjs'> Reactjs </a>
+        </div>
+
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
