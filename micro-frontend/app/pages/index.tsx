@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         }}>
           <a href='/blog'> Blog </a>
           <a href='/app'> App </a>
-          <a href='/widget/teste'> Widget </a>
+          <a href='/widget'> Widget </a>
           <a href='/reactjs'> Reactjs </a>
         </div>
 
