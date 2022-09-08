@@ -1,5 +1,5 @@
 const BASE_URL = {
-  blog: process.env.NODE_ENV === 'production' ? 'https://blog-micro-frontend-base.vercel.app' : 'http://localhost:3001',
+  blog: process.env.NODE_ENV === 'production' ? 'https://sorteio-de-nomes.vercel.app' : 'http://localhost:3001',
   app: process.env.NODE_ENV === 'production' ? 'https://app-micro-frontend-base.vercel.app' : 'http://localhost:3002',
   reactjs: process.env.NODE_ENV === 'production' ? 'https://app-reactjs-micro-frontend-base.vercel.app' : 'http://localhost:3003',
   widget: process.env.NODE_ENV === 'production' ? 'https://widget-two-black.vercel.app' : 'http://localhost:3004',
